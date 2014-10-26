@@ -13,7 +13,7 @@ package com.doordie.linkedlists;
 public class ReverseListBwBounds {
 
 	//function for reversing nodes between bounds
-	//assumes start and end points are in list length
+	//assumes start and end points are inside list length
 	public static ListNode reverse(ListNode head, int m, int n) {
 		int index = 1;
 		ListNode dummy = new ListNode(-1, head);
