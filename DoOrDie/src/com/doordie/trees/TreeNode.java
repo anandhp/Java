@@ -17,4 +17,8 @@ public class TreeNode {
 	public boolean isLeaf() {
 		return left == null && right == null;
 	}
+	
+	public void print() {
+		System.out.print(this.value + " ");
+	}
 }
