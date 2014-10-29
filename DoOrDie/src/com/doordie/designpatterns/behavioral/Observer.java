@@ -134,6 +134,8 @@ public class Observer {
 		
 		new Thread(new Observer().new StackUpdater(stackGrabber,450, "APPL")).start();
 		new Thread(new Observer().new StackUpdater(stackGrabber,600, "GOOG")).start();
+		
+		System.out.println(observer2);
 	}
 
 }
