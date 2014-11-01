@@ -18,6 +18,10 @@ public class TreeNode {
 		return left == null && right == null;
 	}
 	
+	public String toString() {
+		return Integer.toString(value);
+	}
+	
 	public void print() {
 		System.out.print(this.value + " ");
 	}

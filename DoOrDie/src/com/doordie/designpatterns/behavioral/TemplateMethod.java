@@ -62,9 +62,5 @@ public class TemplateMethod {
 		
 		printer = new TemplateMethod().new CustomSeparatorPrinter();
 		printer.print();
-		
-		
-		
 	}
-
 }
