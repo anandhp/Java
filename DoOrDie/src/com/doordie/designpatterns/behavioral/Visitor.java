@@ -4,8 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Visitor pattern example
+ * 
+ * VISITOR pattern represent an operation to be performed on the
+ * elements of an object structure. Visitor lets you define a new 
+ * operation without changing the classes of the elements on which
+ * it operates.
  *
+ * Below is an example of Visitor pattern
+ * 
  */
 
 public class Visitor {

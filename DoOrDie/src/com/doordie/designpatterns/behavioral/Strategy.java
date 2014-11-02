@@ -3,6 +3,16 @@ package com.doordie.designpatterns.behavioral;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 
+ * STRATEGY pattern define a family of algorithms, encapsulate each one,
+ * and make them interchangeable. Strategy lets the algorithm vary 
+ * independently from clients that use it.
+ * 
+ * Below is an example of payment handling in shopping. Payment options
+ * are changed by client dynamically.
+ *
+ */
 public class Strategy {
 
 	//abstract strategy
@@ -10,6 +20,7 @@ public class Strategy {
 		public void pay(double amount);
 	}
 	
+	//concrete strategies 
 	public class CredicardPayment implements Payment {
 		@Override
 		public void pay(double amount) {

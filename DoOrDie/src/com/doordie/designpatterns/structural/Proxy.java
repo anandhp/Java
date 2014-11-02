@@ -1,12 +1,16 @@
 package com.doordie.designpatterns.structural;
 
 /**
- * Proxy Pattern example 
+ * PROXY pattern provide a surrogate or place-holder for 
+ * another object to control access/references to it.
  * 
- * The intent of this pattern is to provide a placeholder
- * for an object to control references to it.
+ * Below explained an example of Image creation in typical
+ * graphic system. ImageProxy acts as a place-holder for
+ * accessing actual object HighResolutionImage until its
+ * absolutely necessary
  *
  */
+
 public class Proxy {
 
 	//Interface

@@ -1,5 +1,15 @@
 package com.doordie.designpatterns.creational;
 
+/**
+ * SINGLETON pattern ensures a class has only one instance, 
+ * and provide a global point of access to it.
+ * 
+ * Below is an example of Singleton class. It exposes
+ * getInstace() method which always ensures only one instance
+ * of the class is created
+ *
+ */
+
 public class Singleton {
 	//Single instance of this class
 	private static Singleton instance = null;

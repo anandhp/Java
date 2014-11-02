@@ -3,6 +3,16 @@ package com.doordie.designpatterns.structural;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * COMPOSITE pattern compose objects into tree structures to represent 
+ * part-whole hierarchies. Composite lets clients treat individual objects 
+ * and compositions of objects uniformly.
+ * 
+ * Below is an example Employee type hierarchy. Notice that pattern makes sure
+ * display interface is uniform between both Manager and Employee objects
+ *
+ */
+
 public class Composite {
 
 	public abstract class Employee {

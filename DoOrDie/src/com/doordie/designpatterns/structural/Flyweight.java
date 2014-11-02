@@ -3,6 +3,17 @@ package com.doordie.designpatterns.structural;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 
+ * FLYWEIGHT pattern comes in handy under low memory conditions
+ * where sharing of large number of similar objects efficiently.
+ * It avoids duplication of same object unnecessarily
+ * 
+ * Below is an example of shape object which is cached for efficient
+ * sharing for its future references
+ *
+ */
+
 public class Flyweight {
 	
 	public enum Color {

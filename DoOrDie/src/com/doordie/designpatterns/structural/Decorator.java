@@ -1,6 +1,11 @@
 package com.doordie.designpatterns.structural;
 
 /**
+ * 
+ * DECORATOR pattern provides a way to attach additional responsibilities 
+ * to an object dynamically keeping the same interface. Decorators provide 
+ * a flexible alternative to sub-classing for extending functionality.
+ * 
  * Decorator pattern example. A class example of window system is used
  * to demo the decorator patter.
  *

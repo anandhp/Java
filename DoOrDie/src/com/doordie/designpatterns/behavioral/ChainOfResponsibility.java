@@ -1,8 +1,20 @@
 package com.doordie.designpatterns.behavioral;
 
 /**
- *	ChainOfResponsibility pattern example
+ * 
+ * CHAIN-OF-RESPONSIBILITY avoids coupling the sender of a request 
+ * to its receiver by giving more than one object a chance to handle
+ * the request. Chain the receiving objects and pass the request along
+ * the chain until an object handles it.
+ * 
+ * Consider an evaluation of mathematical basic expression. Here different
+ * mathematical operations can be handled by chaining them together.
+ * Each expression evaluation class handles if it is responsible else
+ * passes on to next evaluator on the chain
+ * 
  */
+
+
 public class ChainOfResponsibility {
 
 	//Abstract Operation

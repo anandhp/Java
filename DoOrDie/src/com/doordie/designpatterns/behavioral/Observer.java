@@ -4,6 +4,18 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 
+ * Define a one-to-many dependency between objects where a state change 
+ * in one object (called SUBJECT) results in all its dependents (called OBSERVERS)
+ * being notified and updated automatically.
+ *
+ * Below is an example of StockTicker scenario where StockGrabber generates
+ * events upon its state change and those events are received by different instances
+ * of StockObserver.
+ * 
+ */
+
 public class Observer {
 	private static int observerIDTracer = 0;
 

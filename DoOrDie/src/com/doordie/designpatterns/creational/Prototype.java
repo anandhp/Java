@@ -1,7 +1,13 @@
 package com.doordie.designpatterns.creational;
 
 /**
- *	Prototype pattern demo 
+ * 
+ * PROTOTYPE pattern specifies the kinds of objects to create using a 
+ * prototypical instance, and create new objects by copying this prototype.
+ * 
+ * Below is an example of Prototype pattern for creating new set of shapes
+ * from prototypical instances.
+ * 
  */
 
 public class Prototype {

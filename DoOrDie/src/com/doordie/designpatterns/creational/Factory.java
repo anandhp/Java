@@ -1,8 +1,16 @@
 package com.doordie.designpatterns.creational;
 
 /**
- * Factory pattern example
+ * 
+ * FACTORY Pattern defines an interface for creating a single object,
+ * but let subclasses decide which class to instantiate. Factory Method
+ * lets a class defer instantiation to subclasses
+ * 
+ * Below is the example of creating different graphic controls using
+ * Factory pattern
+ * 
  */
+
 public class Factory {
 	//Type of controls
 	public enum ControlType {

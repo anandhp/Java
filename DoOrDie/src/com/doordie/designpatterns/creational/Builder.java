@@ -3,7 +3,11 @@ package com.doordie.designpatterns.creational;
 import java.util.ArrayList;
 
 /**
- *	Builder pattern example using typical meal order
+ * 	BUILDER PATTERN is used to separate the construction of a
+ *  complex object from its representation, allowing the same 
+ *  construction process to create various representations.
+ *  
+ *	Below is a Builder Pattern example using typical meal order
  *	Meal consists of many items which are built by series
  *	of steps
  */
@@ -101,6 +105,7 @@ public class Builder {
 		}
 	}
 	
+	//Builder class
 	public class MealBuilder {
 		public Meal buildVegMeal() {
 			Meal meal = new Meal();

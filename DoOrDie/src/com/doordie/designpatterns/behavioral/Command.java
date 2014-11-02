@@ -3,6 +3,16 @@ package com.doordie.designpatterns.behavioral;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * COMMAND pattern, encapsulate a request as an object, thereby letting
+ * you parameterize clients with different requests, queue or log requests,
+ * and support undo operations.
+ * 
+ * Below is an example of simple Stock trading scenario. Buying and Selling
+ * (commands) of stocks are parameterized by the StockBroker (Invoker) to
+ * carry operations of the StockTrade (Receiver)
+ *
+ */
 public class Command {
 
 	//Receiver 

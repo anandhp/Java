@@ -1,8 +1,16 @@
 package com.doordie.designpatterns.structural;
 
 /**
- * Adapter pattern example. Adapter pattern makes two in 
- * compatible interfaces work together.
+ * 
+ * ADAPTER pattern convert the interface of a class into another interface 
+ * clients expect. An adapter lets classes work together that could not 
+ * otherwise because of incompatible interfaces. 
+ * 
+ * The enterprise integration pattern equivalent is the translator.
+ * 
+ * Below is an example of adapter pattern for using LegacyRectangle class
+ * in the way client expects
+ * 
  */
 public class Adapter {
 	

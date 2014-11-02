@@ -1,5 +1,18 @@
 package com.doordie.designpatterns.structural;
 
+/**
+ * 
+ * FACADE pattern provides a unified interface to a set of interfaces
+ * in a subsystem. Facade defines a higher-level interface that makes 
+ * the subsystem easier to use.
+ * 
+ * Below is an example Banking transaction system. Facade pattern applied
+ * here to make client not to worry about underlying subsystem verifications.
+ * BankAccountFacade exposes higher-level interface by performing subsystem
+ * interface interactions itself (there by keeping client simple).
+ *
+ */
+
 public class Facade {
 
 	//Account checking subsystem

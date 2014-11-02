@@ -1,5 +1,15 @@
 package com.doordie.designpatterns.creational;
 
+/**
+ * 
+ * ABSTRACT FACTORY provides an interface for creating families of related or 
+ * dependent objects without specifying their concrete classes.
+ * 
+ * Below is an example Abstract Factory pattern for creating different graphic
+ * controls for different platforms
+ * 
+ */
+
 public class AbstractFactory {
 	
 	public enum ControlType {
