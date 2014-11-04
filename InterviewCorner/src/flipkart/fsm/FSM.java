@@ -15,13 +15,10 @@ public class FSM {
 	}
 	
 	public void addState(String state, Runnable entryCode, Runnable exitCode, Runnable alwaysRunCode) {
-		boolean initState = this.states.size() == 0;
-		
 		if (!this.states.containsKey(state))
 			this.states.put(state, new State(entryCode, exitCode, alwaysRunCode));
 		
-		if (initState)
-			currentState = state;
+		setState(state);
 	}
 	
 	public void setEntryCode(String state, Runnable entryCode) {
