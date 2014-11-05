@@ -15,19 +15,7 @@ import java.util.List;
  */
 
 public class Memento {
-	//Memento object holding the originator info
-	public static class MementoClass {
-		//state of originator saved in Memento
-		private String state;
-		
-		//New state set to memento
-		public MementoClass(String state) { this.state = state; }
-		
-		//return the store state from this memento
-		public String getState() { return state; }
-	}
 	
-
 	//Originator
 	public static class Originator {
 		//state of originator
@@ -47,14 +35,28 @@ public class Memento {
 			this.state = memento.getState();
 			System.out.println("Originator RESTORE momento " + state);
 		}
+	
+		//Memento object holding the originator info
+		public static class MementoClass {
+			//state of originator saved in Memento
+			private String state;
+			
+			//New state set to memento
+			public MementoClass(String state) { this.state = state; }
+			
+			//return the store state from this memento
+			public String getState() { return state; }
+		}
+		
+	
 	}
 	
 	//Caretaker
 	public static class CareTaker {
-		List<MementoClass> savedStates = new ArrayList<MementoClass>();
+		List<Originator.MementoClass> savedStates = new ArrayList<Originator.MementoClass>();
 		
-		public void addMemento(MementoClass memento) { savedStates.add(memento); }
-		public MementoClass getMomento(int index) { return savedStates.get(index); }
+		public void addMemento(Originator.MementoClass memento) { savedStates.add(memento); }
+		public Originator.MementoClass getMomento(int index) { return savedStates.get(index); }
 	}
 	
 	//Memento tester
