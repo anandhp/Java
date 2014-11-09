@@ -3,6 +3,11 @@ package com.doordie.problems;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * LRU Cache implementation.
+ *
+ */
+
 public class LRUCache {
 	
 	private class LRUNode {
@@ -17,8 +22,8 @@ public class LRUCache {
 			next = null;
 			prev = null;
 		}
-
 	}
+	
 	private LRUNode head = null, tail = null;
 	private Map<Integer, LRUNode> itemMap;
 	private int capacity;
@@ -31,7 +36,6 @@ public class LRUCache {
 		tail = new LRUNode(-1, -1);
 		head.next = tail;
 		tail.prev = head;
-		
     }
     
     public int get(int key) {
@@ -87,8 +91,6 @@ public class LRUCache {
 		lruCache.set(6, 6);
 		System.out.println(lruCache.get(1));
 		lruCache.set(3, 4);
-		System.out.println(lruCache.get(3));
-		
+		System.out.println(lruCache.get(3));		
 	}
-
 }
