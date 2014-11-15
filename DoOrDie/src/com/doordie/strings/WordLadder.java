@@ -1,7 +1,9 @@
 package com.doordie.strings;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 import java.util.Set;
 
@@ -62,6 +64,40 @@ public class WordLadder {
     	
     	return 0;
     }
+    
+    public static List<List<String>> findLadders(String start, String end, Set<String> dict) {
+    	List<List<String>> result = new ArrayList<List<String>>();
+    	Queue<String> wordsQueue = new LinkedList<String>();
+    	
+    	List<String> current = new ArrayList<String>();
+
+    	dict.add(end);
+    	wordsQueue.add(start);
+    	
+    	while (!wordsQueue.isEmpty()) {
+    		String currentWord = wordsQueue.poll();
+        	current.add(start);
+    		
+    		if (currentWord.equals(end)) {
+    			result.add(new ArrayList<String>(current));
+    		}
+    		
+    		for (int i = 0; i < currentWord.length(); i++) {
+    			for (char c = 'a'; c <= 'z'; c++) {
+    				char[] chars = currentWord.toCharArray();
+    				chars[i] = c; 
+    				String newWord = new String(chars);
+    				if (dict.contains(newWord)) {
+    					wordsQueue.add(newWord);
+    					dict.remove(newWord);
+    				}
+    			}
+    		}
+    	}
+    	
+    	return result;
+    }
+    
 	public static void main(String[] args) {
 		Set<String> dict = new HashSet<String>();
 		dict.add("hot");
@@ -78,6 +114,11 @@ public class WordLadder {
 		for (String[] test : tests) {
 			int length = WordLadder.ladderLength(test[0], test[1], new HashSet<String>(dict));
 			System.out.println(test[0] + " => " + test[1] + " is " + length);
+		}
+		
+		for (String[] test : tests) {
+			List<List<String>> result = WordLadder.findLadders(test[0], test[1], dict);
+			System.out.println(result);
 		}
 	}
 
